@@ -1,0 +1,99 @@
+.container {
+	margin: 0 auto;
+  max-width: 600px;
+	text-align: center;
+}
+form {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+  flex-direction: column;
+}
+label {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+input[type="text"] {
+	width: 100%;
+  height: 50%;
+  font-size:35px;
+  font-weight: bold;
+  font-style: italic;
+  color: deeppink;
+	padding: 12px 20px;
+	border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;	
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+input:focus{
+  font-style: italic;
+  color:rgb(0, 255 ,255);
+  background-color: #212121;
+  outline-color: rgb(0, 255 ,255);
+}
+body{
+  align-items: center;
+  justify-content: center;
+  background-color: #060b23;
+}
+::placeholder{
+  color: blue;
+  font-style: italic;
+}
+h1 , button{
+  background: linear-gradient(-45deg, rgb(0, 255, 13), rgb(0, 217, 255), blue, rgb(107, 19, 189), red, rgb(255, 136, 0));
+}
+button {
+  height: 80px;
+  width: 250px;
+	border: none;
+	color: white;
+  cursor: pointer;
+	padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  
+}
+ h1 {
+  margin-bottom: 30px;
+}
+#result {
+  border: 40px;
+	font-weight: bold;
+  background: linear-gradient(-45deg, red , deeppink,red,deeppink); 
+
+}
+h1 , #result{
+  -webkit-background-clip: text;
+  color:transparent;
+  font-size: 70px;
+}
+h1 , button , #result{
+  background-size: 350% 350%;
+  animation: ani 5s ease-in-out infinite;
+  font-style: italic;
+}
+@keyframes ani {
+  0% {background-position: 0 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0 50%;}
+}
+.badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #060b23;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+.badge:hover {
+  border: 123px solid linear-gradient(to right, #ff0000, #0000ff);
+}
